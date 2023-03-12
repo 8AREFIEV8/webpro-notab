@@ -21,9 +21,15 @@ body {
 }
 
 h1 h2 h3 h4 h5 h6 {
+  margin: 0;
 font-family: 'Montserrat', sans-serif;
-
 }
+
+p {
+  margin: 0;
+}
+
+
  a {
   color: #fff;
   text-decoration: none;
@@ -82,29 +88,112 @@ font-family: 'Montserrat', sans-serif;
   text-decoration: underline;
 }
 
+main {
+  margin-bottom: -50px;
+}
+
 /* --------------------
-          MAIN
+          WELCOME
 ----------------------*/
 
 .welcome {
+  /* padding-bottom: 60px; */
 }
-.container {
+.welcome__container {
+  position: relative;
 }
+
+
+.welcome__container::after {
+  content: "";
+  width: 660px;
+  height: 790px;
+
+  position: absolute;
+  right: -90px;
+  top: -80px;
+  
+  z-index: -1; 
+
+  background-image: url(img/bg-welcome.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .welcome__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+  /* margin-bottom: 10px; */
+  
 }
 .welcome__desc {
+ 
+
+
 }
 .welcome__title {
+  font-size: 64px;
+line-height: 70px;
+margin-bottom: 130px;
+
 }
 .welcome__text {
+  position: relative;
+  font-size: 20px;
+  padding-left: 130px;
+  width: 380px;
+  color: #FFFFFF;
 }
+
+.welcome__text::before {
+  content: "";
+  width: 125px;
+  height: 125px;
+  
+  position: absolute;
+  left: 20px;
+  bottom: 50%;
+
+
+background: rgba(96, 92, 234, 0.5);
+filter: blur(50px);
+
+}
+
+.welcome__text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 55px;
+  width: 130px;
+  height: 4px;
+  background-color: #fff;
+  transform: rotate(120deg);
+}
+
 .welcome__img {
+  width: 450px;
+}
+
+.welcome__cta {
+  padding-right: 60px;
 }
 .cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .cta__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
 }
+
 .cta__links {
+ display: flex;
+ gap: 30px;
 }
 .cta__link {
 }
