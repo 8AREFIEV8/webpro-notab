@@ -53,6 +53,10 @@ h2 {
   padding: 0 15px;
  }
 
+ .container--small {
+  max-width: 1000px;
+}
+
 /******************  
       HEADER
 *******************/
@@ -265,4 +269,62 @@ filter: blur(50px);
 .mission__text {
   color: #FFFFFF;
 
+}
+
+/*************
+    COMMON
+**************/
+
+.common {
+  padding: 50px 0;
+  margin-top: 100px;
+  
+  
+
+}
+
+
+
+.container {
+}
+
+.common__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.container--small {
+  
+
+}
+
+.commom__img {
+}
+
+.common__col {
+  max-width: 410px;
+}
+
+.common__title {
+  margin-bottom: 15px;
+}
+
+.common__text {
+}
+
+.scaner {
+  background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 56%, #000000 84%), url("img/bg-scanner.jpg");
+  background-size: cover;
+}
+
+.code {
+  background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 56%, #000000 84%), url("img/bg-code.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.revers {
+  flex-direction: row-reverse;
 }
