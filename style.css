@@ -328,3 +328,56 @@ filter: blur(50px);
 .revers {
   flex-direction: row-reverse;
 }
+
+/*************
+    FOOTER
+**************/
+
+.footer {
+}
+
+
+.footer__cta {
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer__cta .cta__text {
+ font-size: 24px;
+
+}
+
+.footer__cta .cta__links {
+  gap: 60px;
+ 
+ }
+
+.footer__cta .cta__img {
+  height: 80px;
+ 
+ }
+
+.footer__row {
+
+}
+
+.footer__content {
+}
+
+.footer__logo-link {
+}
+
+.footer__logo {
+}
+
+.footer__conact {
+}
+
+.footer__copy {
+}
+
+.footer__links {
+}
+
+.footer__link {
+}
