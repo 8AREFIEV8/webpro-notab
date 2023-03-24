@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;700&display=swap');
 
 @font-face {
-  font-family: "Avenir"; 
-  src: url("fonts/Avenir-Heavy.ttf") format("truetype"); 
-  font-style: normal; 
-  font-weight: 900; 
-} 
+  font-family: 'Avenir';
+  src: url('fonts/Avenir-Heavy.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+}
 /* 
 font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Sans', sans-serif;
@@ -23,7 +23,7 @@ body {
 
 h1 h2 h3 h4 h5 h6 {
   margin: 0;
-font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -34,26 +34,25 @@ h2 {
   font-size: 50px;
 }
 
-
- a {
+a {
   color: #fff;
   text-decoration: none;
- }
+}
 
- a:hover {
+a:hover {
   opacity: 0.8;
- }
- a:active {
+}
+a:active {
   opacity: 1;
- }
+}
 
- .container {
+.container {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 15px;
- }
+}
 
- .container--small {
+.container--small {
   max-width: 1000px;
 }
 
@@ -64,15 +63,12 @@ h2 {
 .header {
   /* position: relative;
   z-index: 1; */
-  
-
 }
 
 .header__container {
   display: flex;
   align-items: center;
   gap: 110px;
-
 }
 
 .logo {
@@ -82,15 +78,12 @@ h2 {
 }
 
 .header_logo {
-
 }
 
 .logo-img {
-
 }
 
 .logo-text {
-
 }
 
 .header-login {
@@ -109,23 +102,21 @@ main {
 ----------------------*/
 
 .welcome {
- 
 }
 .welcome__container {
   position: relative;
 }
 
-
 .welcome__container::after {
-  content: "";
+  content: '';
   width: 660px;
   height: 790px;
 
   position: absolute;
   right: -90px;
   top: -80px;
-  
-  z-index: -1; 
+
+  z-index: -10;
 
   background-image: url(img/bg-welcome.svg);
   background-size: contain;
@@ -138,44 +129,37 @@ main {
   justify-content: space-between;
   padding-right: 30px;
   min-height: 500px;
-  
 }
 .welcome__desc {
- 
-
-
 }
 .welcome__title {
   font-size: 64px;
-line-height: 70px;
-margin-bottom: 130px;
-
+  line-height: 70px;
+  margin-bottom: 130px;
 }
 .welcome__text {
   position: relative;
   font-size: 20px;
   padding-left: 130px;
   width: 380px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .welcome__text::before {
-  content: "";
+  content: '';
   width: 125px;
   height: 125px;
-  
+
   position: absolute;
   left: 20px;
   bottom: 50%;
 
-
-background: rgba(96, 92, 234, 0.5);
-filter: blur(50px);
-
+  background: rgba(96, 92, 234, 0.5);
+  filter: blur(50px);
 }
 
 .welcome__text::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 55px;
@@ -190,6 +174,7 @@ filter: blur(50px);
   position: absolute;
   right: 55px;
   top: -140px;
+  z-index: -5;
 }
 
 .welcome__cta {
@@ -207,13 +192,12 @@ filter: blur(50px);
 }
 
 .cta__links {
- display: flex;
- gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 .cta__link {
 }
 .cta__img {
-
 }
 
 /*************
@@ -223,13 +207,10 @@ filter: blur(50px);
 .mission {
   padding: 100px 85px;
   position: relative;
-
 }
 
 .mission__container {
   /* display: flex; */
-  
-
 }
 .mission__img {
   width: 900px;
@@ -238,19 +219,16 @@ filter: blur(50px);
   right: 50%;
   z-index: -1;
   transform: rotate(90deg) translate(-43%);
-
 }
 .mission__desc {
   width: 320px;
   margin-left: auto;
-
 }
 .mission__title {
   position: relative;
- font-size: 51px;
- color: #FFFFFF;
- margin-bottom: 30px;
-
+  font-size: 51px;
+  color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .mission__title::after {
@@ -260,15 +238,14 @@ filter: blur(50px);
   top: 7px;
   width: 85px;
   height: 85px;
-  background: #F101BF;
+  background: #f101bf;
   opacity: 0.7;
   filter: blur(50px);
   z-index: -1;
 }
 
 .mission__text {
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
 /*************
@@ -278,12 +255,7 @@ filter: blur(50px);
 .common {
   padding: 50px 0;
   margin-top: 100px;
-  
-  
-
 }
-
-
 
 .container {
 }
@@ -292,12 +264,9 @@ filter: blur(50px);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-
 }
 
 .container--small {
-  
-
 }
 
 .commom__img {
@@ -315,12 +284,24 @@ filter: blur(50px);
 }
 
 .scaner {
-  background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 56%, #000000 84%), url("img/bg-scanner.jpg");
+  background: linear-gradient(
+      180deg,
+      #000000 -3%,
+      rgba(0, 0, 0, 0) 56%,
+      #000000 84%
+    ),
+    url('img/bg-scanner.jpg');
   background-size: cover;
 }
 
 .code {
-  background: linear-gradient(180deg, #000000 -3%, rgba(0, 0, 0, 0) 56%, #000000 84%), url("img/bg-code.jpg");
+  background: linear-gradient(
+      180deg,
+      #000000 -3%,
+      rgba(0, 0, 0, 0) 56%,
+      #000000 84%
+    ),
+    url('img/bg-code.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -334,50 +315,81 @@ filter: blur(50px);
 **************/
 
 .footer {
+  padding: 150px 0 50px;
+  overflow: hidden;
 }
 
+.footer__container {
+  position: relative;
+}
+
+.footer__container::before {
+  content: '';
+  position: absolute;
+  left: -170px;
+  bottom: -200px;
+  z-index: -1;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(12deg, #f101bf 3%, #0066ff 97%);
+  opacity: 0.3;
+  filter: blur(125px);
+  transform: rotate(6deg);
+}
 
 .footer__cta {
+  margin-bottom: 125px;
   flex-direction: column;
   gap: 30px;
 }
 
 .footer__cta .cta__text {
- font-size: 24px;
-
+  font-size: 24px;
 }
 
 .footer__cta .cta__links {
   gap: 60px;
- 
- }
+}
 
 .footer__cta .cta__img {
   height: 80px;
- 
- }
+}
 
 .footer__row {
-
+  font-family: 'Avenir', sans-serif;
+  font-weight: 900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__content {
 }
 
 .footer__logo-link {
+  display: inline-block;
+  margin-bottom: 15px;
 }
 
 .footer__logo {
 }
 
 .footer__conact {
+  margin-bottom: 15px;
 }
 
 .footer__copy {
 }
 
 .footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .footer__link {
+}
+
+.xxx b {
+  color: red;
 }
