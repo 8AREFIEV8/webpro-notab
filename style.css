@@ -18,6 +18,10 @@ body {
   background: #000;
   color: #fff;
   font-size: 18px;
+  /* overflow-x: hidden; */
+}
+
+.wrapper {
   overflow-x: hidden;
 }
 
@@ -392,4 +396,27 @@ main {
 
 .xxx b {
   color: red;
+}
+
+
+/* --------------------
+          ADAPTATION
+----------------------*/
+
+@media (max-width: 940px) {
+  .welcome__img {
+    right: -85px;
+  }
+
+  .welcome__cta{
+    padding: 0;
+  }
+
+  .cta__text {
+    font-size: 25px;
+  }
+
+  .mission__img {
+    right: 60%;
+  }
 }
